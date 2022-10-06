@@ -13,8 +13,8 @@ app.get("/", function(req, res){
     resText += "I acknowledge the College's academic integrity policy - and my own integrity - remain in effect whether my work is done remotely or onsite. Any test or assingnment is in act of trust between me and my instructor, and specially with my classmates... even when no one is watching. I Declare I will not break that trust.<br><br>"; 
     resText += "Name: Damanjot Singh<br><br>";
     resText += "Student Number: 148285216<br><br>"; 
-    resText += "<a href = './cpa'> Click to visit CPA Students </a> <br>";
-    resText += "<a href = './highGPA'> Click to see who has the highest GPA</a> <br>";
+    resText += "<a href = './students.json'> Click to visit CPA Students </a> <br>";
+    
 
 });
 
