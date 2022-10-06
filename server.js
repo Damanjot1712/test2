@@ -33,6 +33,13 @@ app.get("/highGPA", function(req,res){
 });
 app.listen(HTTP_PORT, onHttpStart);
 
+app.get("/cpa", (req, res)=>{
+    dataservice.getcpa().then((data) =>{
+        res.json({data});
+    }).catch((err)=>{
+        res.json({message: err});
+    })
+});
 
 app.use((req, res)=>{
     res.status(404).end('404 PAGE NOT FOUND');
